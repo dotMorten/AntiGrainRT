@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{2d4b9cc9-3e5a-4c82-aede-48cdca30477e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\util">
+      <UniqueIdentifier>{37be701d-6273-4e9d-8289-d4216099c14a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\platform">
+      <UniqueIdentifier>{b1b91a98-988c-4d50-96b9-e4e30f14f7bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\platform\win32">
+      <UniqueIdentifier>{1f0715e7-81fb-4ff4-962f-eae46095a590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ctrl">
+      <UniqueIdentifier>{bd6b6455-abae-44af-8092-a07193efe198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{e67d24c3-cb72-47c4-9684-3c8a568d8ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ctrl">
+      <UniqueIdentifier>{db90ca4d-017a-4f12-9783-c7206a9065fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform">
+      <UniqueIdentifier>{5b6b4b4c-11ef-45ac-a2e4-5549981d7057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform\win32">
+      <UniqueIdentifier>{5f2b58e7-26df-456f-9699-a39a95a78c3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform\sdl">
+      <UniqueIdentifier>{edc4d93a-15f8-40b8-81d0-e19ca8e9c52c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="agg.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_arc.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_arrowhead.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_bezier_arc.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_bspline.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_curves.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_embedded_raster_fonts.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_gsv_text.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_image_filters.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_line_aa_basics.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_line_profile_aa.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_rounded_rect.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_sqrt_tables.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_trans_affine.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_trans_double_path.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_trans_single_path.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_trans_warp_magnifier.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_vcgen_bspline.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_vcgen_contour.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_vcgen_dash.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_vcgen_markers_term.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_vcgen_smooth_poly1.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_vcgen_stroke.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_vpgen_clip_polygon.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_vpgen_clip_polyline.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\agg_vpgen_segmentator.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\ctrl\agg_bezier_ctrl.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\ctrl\agg_cbox_ctrl.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\ctrl\agg_gamma_ctrl.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\ctrl\agg_gamma_spline.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\ctrl\agg_polygon_ctrl.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\ctrl\agg_rbox_ctrl.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\ctrl\agg_scale_ctrl.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\ctrl\agg_slider_ctrl.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\ctrl\agg_spline_ctrl.cpp" />
+    <ClCompile Include="..\Dependencies\agg-2.4\src\platform\sdl\agg_platform_support.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="agg.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_alpha_mask_u8.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_arc.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_array.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_arrowhead.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_basics.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_bezier_arc.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_bitset_iterator.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_blur.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_bounding_rect.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_bspline.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_clip_liang_barsky.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_color_gray.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_color_rgba.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_config.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_adaptor_vcgen.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_adaptor_vpgen.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_bspline.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_clip_polygon.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_clip_polyline.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_close_polygon.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_concat.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_contour.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_curve.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_dash.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_gpc.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_marker.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_marker_adaptor.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_segmentator.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_shorten_path.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_smooth_poly1.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_stroke.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_transform.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_conv_unclose_polygon.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_curves.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_dda_line.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_ellipse.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_ellipse_bresenham.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_embedded_raster_fonts.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_font_cache_manager.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_gamma_functions.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_gamma_lut.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_glyph_raster_bin.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_gradient_lut.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_gsv_text.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_image_accessors.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_image_filters.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_line_aa_basics.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_math.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_math_stroke.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_path_length.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_path_storage.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_path_storage_integer.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_pattern_filters_rgba.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_pixfmt_amask_adaptor.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_pixfmt_gray.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_pixfmt_rgb.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_pixfmt_rgba.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_pixfmt_rgb_packed.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_pixfmt_transposer.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_rasterizer_cells_aa.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_rasterizer_compound_aa.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_rasterizer_outline.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_rasterizer_outline_aa.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_rasterizer_scanline_aa.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_rasterizer_sl_clip.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_renderer_base.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_renderer_markers.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_renderer_mclip.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_renderer_outline_aa.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_renderer_outline_image.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_renderer_primitives.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_renderer_raster_text.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_renderer_scanline.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_rendering_buffer.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_rendering_buffer_dynarow.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_rounded_rect.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_scanline_bin.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_scanline_boolean_algebra.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_scanline_p.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_scanline_storage_aa.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_scanline_storage_bin.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_scanline_u.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_shorten_path.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_simul_eq.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_allocator.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_converter.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_gouraud.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_gouraud_gray.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_gouraud_rgba.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_gradient.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_gradient_alpha.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_image_filter.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_image_filter_gray.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_image_filter_rgb.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_image_filter_rgba.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_interpolator_adaptor.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_interpolator_linear.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_interpolator_persp.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_interpolator_trans.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_pattern_gray.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_pattern_rgb.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_pattern_rgba.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_solid.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_span_subdiv_adaptor.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_trans_affine.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_trans_bilinear.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_trans_double_path.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_trans_perspective.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_trans_single_path.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_trans_viewport.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_trans_warp_magnifier.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vcgen_bspline.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vcgen_contour.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vcgen_dash.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vcgen_markers_term.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vcgen_smooth_poly1.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vcgen_stroke.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vcgen_vertex_sequence.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vertex_sequence.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vpgen_clip_polygon.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vpgen_clip_polyline.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\agg_vpgen_segmentator.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_bezier_ctrl.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_cbox_ctrl.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_ctrl.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_gamma_ctrl.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_gamma_spline.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_polygon_ctrl.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_rbox_ctrl.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_scale_ctrl.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_slider_ctrl.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\ctrl\agg_spline_ctrl.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\platform\agg_platform_support.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\platform\win32\agg_win32_bmp.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\util\agg_color_conv.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\util\agg_color_conv_rgb16.h" />
+    <ClInclude Include="..\Dependencies\agg-2.4\include\util\agg_color_conv_rgb8.h" />
+  </ItemGroup>
+</Project>
