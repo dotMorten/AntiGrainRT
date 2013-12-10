@@ -16,7 +16,7 @@ void RenderingBuffer::SetPixel(unsigned int x, unsigned int y, Windows::UI::Colo
 	*ptr++ = color.B;  // B
 }
 
-RenderingBuffer::RenderingBuffer(unsigned int width, unsigned int height)
+RenderingBuffer::RenderingBuffer(unsigned int width, unsigned int height) : m_width(width), m_height(height)
 {
 	m_buffer = ref new ::Platform::Array<uint8>(width * height * 3);
 
