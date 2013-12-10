@@ -13,3 +13,4 @@
 *.a
 src/AntiGrainRT.opensdf
 src/output/
+src/ipch/
