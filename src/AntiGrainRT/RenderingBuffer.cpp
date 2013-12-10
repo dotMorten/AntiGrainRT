@@ -11,13 +11,45 @@ void RenderingBuffer::SetPixel(unsigned int x, unsigned int y, Windows::UI::Colo
 	//	// Get the pointer to the beginning of the i-th row (Y-coordinate)
 	//	// and shift it to the i-th position, that is, X-coordinate.
 	unsigned char* ptr = m_rbuf.row_ptr(y) + x * 3;
-	*ptr++ = color.R; // R
-	*ptr++ = color.G; // G
-	*ptr++ = color.B;  // B
+  if (m_format == AntiGrainRT::PixelFormat::Rgb24) 
+  {
+    *ptr++ = color.R; // R
+    *ptr++ = color.G; // G
+    *ptr++ = color.B;  // B
+  }
+  else if (m_format == AntiGrainRT::PixelFormat::Bgr24)
+  {
+    *ptr++ = color.B; // R
+    *ptr++ = color.G; // G
+    *ptr++ = color.R;  // B
+  }
 }
 
-RenderingBuffer::RenderingBuffer(unsigned int width, unsigned int height) : m_width(width), m_height(height)
+Windows::UI::Color RenderingBuffer::GetPixel(unsigned int x, unsigned int y)
 {
+  unsigned char* ptr = m_rbuf.row_ptr(y) + x * 3;
+  Windows::UI::Color color;
+  if (m_format == AntiGrainRT::PixelFormat::Rgb24)
+  {
+    color.R = *ptr++;
+    color.G = *ptr++;
+    color.B = *ptr++;
+  }
+  else if (m_format == AntiGrainRT::PixelFormat::Bgr24)
+  {
+    color.B = *ptr++;
+    color.G = *ptr++;
+    color.R = *ptr++;
+  }
+  color.A = 255;
+  return color;
+}
+
+RenderingBuffer::RenderingBuffer(unsigned int width, unsigned int height, AntiGrainRT::PixelFormat format)
+: m_width(width), m_height(height), m_format(format)
+{
+  
+  
 	m_buffer = ref new ::Platform::Array<uint8>(width * height * 3);
 
 	memset(m_buffer->Data, 255, width * height * 3);

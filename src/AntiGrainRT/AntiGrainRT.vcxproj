@@ -95,39 +95,39 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\output\$(Platform)_$(Configuration)\staticlib</LibraryPath>
-	<IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)output\$(Platform)_$(Configuration)\bin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <GenerateManifest>false</GenerateManifest>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\output\$(Platform)_$(Configuration)\staticlib</LibraryPath>
-	<IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)output\$(Platform)_$(Configuration)\bin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\output\$(Platform)_$(Configuration)\staticlib</LibraryPath>
- 	<IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)output\$(Platform)_$(Configuration)\bin\</OutDir>
- </PropertyGroup>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\output\$(Platform)_$(Configuration)\staticlib</LibraryPath>
- 	<IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)output\$(Platform)_$(Configuration)\bin\</OutDir>
- </PropertyGroup>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\output\$(Platform)_$(Configuration)\staticlib</LibraryPath>
- 	<IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)output\$(Platform)_$(Configuration)\bin\</OutDir>
- </PropertyGroup>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <GenerateManifest>false</GenerateManifest>
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\output\$(Platform)_$(Configuration)\staticlib</LibraryPath>
- 	<IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)output\intermediate\$(MSBuildProjectName)\$(Platform)_$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)output\$(Platform)_$(Configuration)\bin\</OutDir>
- </PropertyGroup>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -231,6 +231,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="PixelFormat.h" />
     <ClInclude Include="RenderingBuffer.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
