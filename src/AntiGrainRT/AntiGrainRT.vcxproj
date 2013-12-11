@@ -231,7 +231,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="PixelFormat.h" />
     <ClInclude Include="RenderingBuffer.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
