@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "agg", "agg\agg.vcxproj", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiGrainRT.Tests", "AntiGrainRT.Tests\AntiGrainRT.Tests.csproj", "{ED86A69C-EE34-4871-A5F9-6931457ABCF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiGrainDemoApp", "AntiGrainDemoApp\AntiGrainDemoApp.csproj", "{F2BD5538-064B-420A-918A-A10529FD893A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -61,6 +63,24 @@ Global
 		{ED86A69C-EE34-4871-A5F9-6931457ABCF4}.Release|x64.ActiveCfg = Release|x64
 		{ED86A69C-EE34-4871-A5F9-6931457ABCF4}.Release|x64.Build.0 = Release|x64
 		{ED86A69C-EE34-4871-A5F9-6931457ABCF4}.Release|x64.Deploy.0 = Release|x64
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Debug|ARM.Build.0 = Debug|ARM
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Debug|ARM.Deploy.0 = Debug|ARM
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Debug|Win32.ActiveCfg = Debug|x86
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Debug|Win32.Build.0 = Debug|x86
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Debug|Win32.Deploy.0 = Debug|x86
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Debug|x64.ActiveCfg = Debug|x64
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Debug|x64.Build.0 = Debug|x64
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Debug|x64.Deploy.0 = Debug|x64
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Release|ARM.ActiveCfg = Release|ARM
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Release|ARM.Build.0 = Release|ARM
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Release|ARM.Deploy.0 = Release|ARM
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Release|Win32.ActiveCfg = Release|x86
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Release|Win32.Build.0 = Release|x86
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Release|Win32.Deploy.0 = Release|x86
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Release|x64.ActiveCfg = Release|x64
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Release|x64.Build.0 = Release|x64
+		{F2BD5538-064B-420A-918A-A10529FD893A}.Release|x64.Deploy.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
