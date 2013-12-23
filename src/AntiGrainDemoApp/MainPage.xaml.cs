@@ -6,6 +6,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
+using Windows.Storage.Streams;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -33,6 +35,29 @@ namespace AntiGrainDemoApp
 		{
 			base.OnNavigatedTo(e);
 			CreateImage();
+			LoadLion();
+		}
+
+		private async void LoadLion()
+		{
+			StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///LionShape.Txt"));
+			string shapeString = "";
+			using (IRandomAccessStream fileStream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read))
+			{
+				shapeString = new StreamReader(fileStream.AsStreamForRead()).ReadToEnd();
+			}
+			Grid g = new Grid()
+			{
+				Background = new SolidColorBrush(Colors.CornflowerBlue),
+				VerticalAlignment = Windows.UI.Xaml.VerticalAlignment.Top,
+				HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Left
+			};
+			foreach(var shape in ShapeReader.Parse(shapeString))
+			{
+				var p = new Windows.UI.Xaml.Shapes.Path() { Data = shape.Geometry, Fill = new SolidColorBrush(shape.Color) };
+				g.Children.Add(p);
+			}
+			LayoutRoot.Children.Add(g);
 		}
 
 		private async void CreateImage()
