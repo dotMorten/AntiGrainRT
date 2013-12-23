@@ -6,6 +6,8 @@ using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 using Windows.UI;
 using System.Threading.Tasks;
 using Windows.Graphics.Imaging;
+using Windows.ApplicationModel.Core;
+using Windows.UI.Core;
 
 namespace AntiGrainRT.Tests
 {
@@ -60,13 +62,32 @@ namespace AntiGrainRT.Tests
 		[TestMethod]
 		public async Task CreateImageSourceTest()
 		{
-			AntiGrainRT.RenderingBuffer c = new RenderingBuffer(100, 100, BitmapPixelFormat.Bgra8);
+			AntiGrainRT.RenderingBuffer c = new RenderingBuffer(100, 150, BitmapPixelFormat.Bgra8);
 			for (uint i = 0; i < c.PixelWidth; i++)
 			{
 				c.SetPixel(i, i, Colors.Blue);
 			}
-			var src = await c.CreateImageSourceAsync();
-			Assert.IsNotNull(src);
+			Windows.UI.Xaml.Media.ImageSource src = null;
+			var taskSource = new TaskCompletionSource<object>();
+			await CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(
+				CoreDispatcherPriority.Normal, async () =>
+				{
+					try
+					{
+						src = await c.CreateImageSourceAsync();
+						Assert.IsNotNull(src);
+						Assert.IsInstanceOfType(src, typeof(Windows.UI.Xaml.Media.Imaging.BitmapImage));
+						var bmp = (Windows.UI.Xaml.Media.Imaging.BitmapImage)src;
+						Assert.AreEqual(100, bmp.PixelWidth);
+						Assert.AreEqual(150, bmp.PixelHeight);
+						taskSource.SetResult(null);
+					}
+					catch (Exception e)
+					{
+						taskSource.SetException(e);
+					}
+				});
+			await taskSource.Task;
 		}
 	}
 }
