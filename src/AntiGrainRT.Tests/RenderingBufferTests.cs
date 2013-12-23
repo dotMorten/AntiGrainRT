@@ -26,9 +26,9 @@ namespace AntiGrainRT.Tests
 		[TestMethod]
 		public void SetPixelTestRgb()
 		{
-			AntiGrainRT.RenderingBuffer c = new RenderingBuffer(1, 1, BitmapPixelFormat.Rgba8);
-			c.SetPixel(0, 0, Color.FromArgb(1, 2, 3, 4));
-			var color = c.GetPixel(0, 0);
+			AntiGrainRT.RenderingBuffer c = new RenderingBuffer(3, 2, BitmapPixelFormat.Rgba8);
+			c.SetPixel(2, 1, Color.FromArgb(1, 2, 3, 4));
+			var color = c.GetPixel(2, 1);
 			Assert.AreEqual((byte)1, color.A);
 			Assert.AreEqual((byte)2, color.R);
 			Assert.AreEqual((byte)3, color.G);
@@ -38,9 +38,9 @@ namespace AntiGrainRT.Tests
 		[TestMethod]
 		public void SetPixelTestBgr()
 		{
-			AntiGrainRT.RenderingBuffer c = new RenderingBuffer(1, 1, BitmapPixelFormat.Bgra8);
-			c.SetPixel(0, 0, Color.FromArgb(1, 2, 3, 4));
-			var color = c.GetPixel(0, 0);
+			AntiGrainRT.RenderingBuffer c = new RenderingBuffer(3, 2, BitmapPixelFormat.Bgra8);
+			c.SetPixel(2, 1, Color.FromArgb(1, 2, 3, 4));
+			var color = c.GetPixel(2, 1);
 			Assert.AreEqual((byte)1, color.A);
 			Assert.AreEqual((byte)2, color.R);
 			Assert.AreEqual((byte)3, color.G);
