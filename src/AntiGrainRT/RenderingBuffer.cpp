@@ -17,20 +17,15 @@ void RenderingBuffer::SetPixel(unsigned int x, unsigned int y, Windows::UI::Colo
 {
 	//	// Get the pointer to the beginning of the i-th row (Y-coordinate)
 	//	// and shift it to the i-th position, that is, X-coordinate.
-	unsigned char* ptr = m_rbuf.row_ptr(y) + x * 4;
+	auto ptr = reinterpret_cast<unsigned int*>(m_rbuf.row_ptr(y) + x * 4);
+  auto pColor = reinterpret_cast<unsigned char*>(&color);
   if (m_format == BitmapPixelFormat::Rgba8) 
   {
-    *ptr++ = color.R; // R
-    *ptr++ = color.G; // G
-    *ptr++ = color.B;  // B
-    *ptr++ = color.A;  // B
+    *ptr = (pColor[1] << 0) | (pColor[2] << 8) | (pColor[3] << 16) | (pColor[0] << 24);
   }
   else if (m_format == BitmapPixelFormat::Bgra8)
   {
-    *ptr++ = color.B; // R
-    *ptr++ = color.G; // G
-    *ptr++ = color.R;  // B
-    *ptr++ = color.A;  // B
+    *ptr = (pColor[3] << 0) | (pColor[2] << 8) | (pColor[1] << 16) | (pColor[0] << 24);
   }
 }
 
