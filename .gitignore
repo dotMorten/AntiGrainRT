@@ -15,3 +15,7 @@ src/AntiGrainRT.opensdf
 src/output/
 src/ipch/
 src/AntiGrainRT.sdf
+src/AntiGrainDemoApp/bin/
+src/AntiGrainDemoApp/obj/
+src/AntiGrainRT.Tests/bin/
+src/AntiGrainRT.Tests/obj/
